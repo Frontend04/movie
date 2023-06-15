@@ -4,4 +4,8 @@ export interface MovieItemProps {
     onEdit: (id: string, newText: string) => void;
     onDelete: (id: string) => void;
     isEditing: boolean;
-  }
+}
+export interface AppState {
+  movies: MovieItem[];
+  currentMovie: string;
+}
