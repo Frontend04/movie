@@ -1,1 +1,28 @@
+.App {
+    text-align: center;
+    margin: 30px auto;
+}
+.MovieItem {
+    margin-top: 10px;
+}
+button {
+    padding: 10px 15px;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer; 
+}
+button:active {
+    box-shadow: 2px 2px 5px #fc894d;
+}
+.btn-delete {
+  margin-left: 10px;
+}
 
+input {
+    width: 190px;
+    margin-right: 10px;
+    height: 30px;
+}

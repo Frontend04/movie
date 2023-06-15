@@ -1,5 +1,6 @@
 import React from "react";
 import { MovieItemProps } from "../types";
+import '../App.css'
 
 class MovieItemComponent extends React.Component<MovieItemProps> {
   handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -15,14 +16,14 @@ class MovieItemComponent extends React.Component<MovieItemProps> {
   render() {
     const { text, isEditing } = this.props;
     return (
-      <div>
+      <div className="MovieItem">
         <input
           type="text"
           value={text}
           onChange={this.handleInputChange}
           disabled={!isEditing}
         />
-        <button onClick={this.handleDeleteClick}>Удалить</button>
+        <button className="btn-delete" onClick={this.handleDeleteClick}>Удалить</button>
       </div>
     );
   }
