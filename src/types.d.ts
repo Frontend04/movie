@@ -13,3 +13,7 @@ export interface MovieItem {
   id: string;
   text: string;
 }
+export interface JokeDisplayProps {
+  joke: string;
+  onNewJoke: () => void;
+}
