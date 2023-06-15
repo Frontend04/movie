@@ -7,6 +7,11 @@ class MovieItemComponent extends React.Component<MovieItemProps> {
     onEdit(id, event.target.value);
   };
 
+  handleDeleteClick = () => {
+    const { id, onDelete } = this.props;
+    onDelete(id);
+  };
+
   render() {
     const { text, isEditing } = this.props;
     return (
@@ -17,7 +22,7 @@ class MovieItemComponent extends React.Component<MovieItemProps> {
           onChange={this.handleInputChange}
           disabled={!isEditing}
         />
-        
+        <button onClick={this.handleDeleteClick}>Удалить</button>
       </div>
     );
   }
