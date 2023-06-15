@@ -9,3 +9,7 @@ export interface AppState {
   movies: MovieItem[];
   currentMovie: string;
 }
+export interface MovieItem {
+  id: string;
+  text: string;
+}
